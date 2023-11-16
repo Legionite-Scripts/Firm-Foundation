@@ -1,0 +1,168 @@
+#subject {
+  background-color: #f0f1f3;
+  height: auto;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+#firstSubjectHeaderDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 5em;
+}
+#firstSubjectHeaderDiv h1 {
+  color: #000000;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+#firstSubjectHeaderDiv h1::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #d60a0b; /* You can customize the line style */
+  margin-bottom: 4px; /* Adjust the spacing between text and line as needed */
+  width: 2em;
+}
+#subjectsIndicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#subjectsIndicator h1 {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #494949;
+}
+#subjectsIndicator #colored {
+  color: #d60a0b;
+}
+#allSubjectsContainer {
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#innerAllSubjectsDiv {
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+#innerAllSubjectsDiv h1 {
+  color: #090909;
+  font-weight: 400;
+  font-size: 1.7em;
+}
+#subjectInputFieldsDiv {
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#subjectInputField {
+  width: 23em;
+  height: 80%;
+}
+#subjectInputFieldsDiv button {
+  background-color: #d60a0b;
+  width: 10em;
+  height: 80%;
+}
+#subjectsTable {
+  margin-top: 5%;
+}
+#subjectsTable th {
+  color: #d60a0b;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+#addNewSubject {
+  height: 10em;
+  border: 1px solid #333;
+  margin-top: 5%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#addNewSubjectHeaderDiv {
+  border: 1px solid #333;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+#addNewSubjectHeaderDiv h1 {
+  font-size: 1.7em;
+  color: #000000;
+  font-weight: 400;
+}
+#addSubjectInputFieldDiv {
+  border: 1px solid #333;
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/* Screens lower than 1000px */
+@media (max-width: 1000px) {
+  #allSubjectsContainer {
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #subjectInputFieldsDiv {
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #subjectInputField {
+    width: 100%;
+    height: 4em;
+  }
+  #subjectInputFieldsDiv button {
+    background-color: #d60a0b;
+    width: 10em;
+    height: 3em;
+    font-size: 1.1em;
+  }
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/* Screens lower than 768px */
+@media (max-width: 768px) {
+  #innerAllSubjectsDiv {
+    height: 5em;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -77,6 +77,7 @@ export default function Setting() {
             options={languageOptions}
             isSearchable={false} // Remove this line if you want a searchable dropdown
             id="settingsSelectTag"
+            placeholder="Select language"
           />
         </Container>
         <Container id="settingsSaveBtnDiv">
