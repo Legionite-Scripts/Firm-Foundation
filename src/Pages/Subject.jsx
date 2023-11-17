@@ -105,6 +105,21 @@ export default function Subject() {
             </tr>
           </tbody>
         </Table>
+        <Container id="previousAndNextDiv">
+          <Container id="innerPreviousAndNextDiv">
+            <h6>Previous</h6>
+            <Container id="numberedSubjectDivs" className="active">
+              <h6>1</h6>
+            </Container>
+            <Container id="numberedSubjectDivs">
+              <h6>2</h6>
+            </Container>
+            <Container id="numberedSubjectDivs">
+              <h6>3</h6>
+            </Container>
+            <h6>Next</h6>
+          </Container>
+        </Container>
       </Container>
 
       <Container id="addNewSubject">
@@ -112,10 +127,26 @@ export default function Subject() {
           <h1 className="display-6">Add New Subject</h1>
         </Container>
         <Container id="addSubjectInputFieldDiv">
-          <Container id="innerAddSubjectDivs"></Container>
-          <Container id="innerAddSubjectDivs"></Container>
-          <Container id="innerAddSubjectDivs"></Container>
-          <Container id="innerAddSubjectDivs"></Container>
+          <Container id="innerAddSubjectDivs">
+            <p>Subject Name</p>
+            <input type="text" />
+          </Container>
+          <Container id="innerAddSubjectDivs">
+            <p>Teachers</p>
+            <input type="text" />
+          </Container>
+          <Container id="innerAddSubjectDivs">
+            <p>Classes</p>
+            <input type="text" />
+          </Container>
+          <Container id="innerAddSubjectDivs">
+            <p>Days</p>
+            <input type="text" />
+          </Container>
+        </Container>
+        <Container id="addSubjectButtons">
+          <button className="btn btn-danger">Save</button>
+          <button className="btn">Reset</button>
         </Container>
       </Container>
     </Container>
