@@ -77,6 +77,12 @@
   width: 10em;
   height: 80%;
 }
+#searchButton{
+  transform: scale(1.05);
+}
+#searchButton:hover{
+  transition: all .3s ease;
+}
 #subjectsTable {
   margin-top: 5%;
 }

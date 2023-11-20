@@ -28,7 +28,10 @@ export default function Sidebar() {
   };
 
   return (
-    <div className={changeNavBar ? "sidebar" : "active-sidebar"}>
+    <div
+      className={changeNavBar ? "sidebar" : "active-sidebar"}
+      style={{ WebkitUserSelect: "none" }}
+    >
       <div className="top">
         <div className="logo">
           <img src="./assest/logo.png" alt="" width="100%" />
@@ -43,7 +46,7 @@ export default function Sidebar() {
       </div>
 
       <div className="sidebar-links">
-        <Link to="/">
+        <Link to="/" style={{ textDecoration: "none" }}>
           <span>
             <img src="./assest/dash.svg" alt="" />
             <NavLink to="/">Dashboard</NavLink>
@@ -76,7 +79,7 @@ export default function Sidebar() {
             </div>
           </div>
         </span>
-        <Link to="/parent">
+        <Link to="/parent" style={{ textDecoration: "none" }}>
           <span>
             <img src="./assest/parent.svg" alt="" />
             <NavLink to="/parent">Parents</NavLink>
@@ -137,13 +140,13 @@ export default function Sidebar() {
             </div>
           </div>
         </span>
-        <Link to="/subjects">
+        <Link to="/subjects" style={{ textDecoration: "none" }}>
           <span>
             <img src="./assest/book.svg" alt="" />
             <NavLink to="/subjects">Subject</NavLink>
           </span>
         </Link>
-        <Link to="/setting">
+        <Link to="/setting" style={{ textDecoration: "none" }}>
           <span>
             <img src="./assest/setting.svg" alt="" />
             <NavLink to="/setting">Settings</NavLink>

@@ -1,0 +1,57 @@
+#parent {
+  background-color: #f0f1f3;
+  height: auto;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+#firstParentHeaderDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 5em;
+}
+#firstParentHeaderDiv h1 {
+  color: #000000;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+#firstParentHeaderDiv h1::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #d60a0b; /* You can customize the line style */
+  margin-bottom: 4px; /* Adjust the spacing between text and line as needed */
+  width: 2em;
+}
+#parentsIndicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#parentsIndicator h1 {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #494949;
+}
+#parentsIndicator #colored {
+  color: #d60a0b;
+}
+#emptySpace {
+  height: 3em;
+}
+#copyrightContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: 2em;
+}
+#copyrightContainer p {
+  color: #929394;
+}
+#copyrightContainer p span {
+  color: #000000;
+  font-weight: 600;
+}

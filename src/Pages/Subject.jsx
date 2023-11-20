@@ -43,7 +43,7 @@ export default function Subject() {
             placeholder="Select Class"
             id="subjectInputField"
           />
-          <button className="btn btn-danger">Search</button>
+          <button className="btn btn-danger" id="searchButton">Search</button>
         </Container>
 
         <Table id="subjectsTable" className="table-bordered">

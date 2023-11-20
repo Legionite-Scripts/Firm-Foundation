@@ -7,6 +7,7 @@ import {
 import "./App.css";
 import "./Pages/css/settings.css";
 import "./Pages/css/subject.css";
+import "./Pages/css/parent.css";
 import Login from "./Pages/Login";
 import Layout from "./Layout/Layout";
 import Dashboard from "./Pages/Dashboard";
