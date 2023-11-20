@@ -7,6 +7,7 @@ import { Table } from "react-bootstrap";
 export default function Subject() {
   let indicatorVar = ">";
 
+  //For react select package
   const classOptions = [
     { value: "classOne", label: "Class One" },
     { value: "classTwo", label: "Class Two" },
